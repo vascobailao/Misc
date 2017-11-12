@@ -1,0 +1,31 @@
+$TTL 60000
+@               IN      SOA     serverDNS1.xpto.pt.    root.serverDNS1.xpto.pt. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        15 ; negative cache ttl
+                        )
+@               IN      NS      serverDNS1.xpto.pt.
+@               IN      NS      serverDNS2.xpto.pt.
+serverDNS1  	IN      		A 	        1.2.3.2
+serverDNS2
+pcAdmin			IN		A		1.2.3.20
+pcCont			IN		A 		1.2.3.19
+pcRH			IN		A 		1.2.3.18
+pc1Lx			IN		A 		192.168.5.2
+pc2Lx			IN		A 		192.168.5.3
+pc1Faro			IN		A 		192.168.128.2
+pc2Faro			IN		A 		192.168.128.3
+pc1Porto		IN		A 		192.168.64.2
+pc2Porto		IN		A 		192.168.64.3
+pcMoni 			IN		A 		192.168.32.3
+pcBackup		IN		A 		192.168.32.2
+serverHTTP		IN		A 		1.2.3.4
+
+
+
+
+
+
+

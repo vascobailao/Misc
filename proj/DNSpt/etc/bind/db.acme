@@ -1,0 +1,14 @@
+; reverse lookup database 
+$TTL    1
+@               IN      SOA     DNSpt.acme.pt.    root.DNSpt.acme.pt. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl 
+                        )
+
+@                            IN      NS      DNSpt.acme.pt.
+DNSpt.acme.pt    	     IN      A       	1.2.66.7
+
+

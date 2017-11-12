@@ -1,0 +1,12 @@
+#Para o RouterCore
+ip addr add dev eth0 1.2.3.34/30 
+ip link set dev eth0 up
+
+#Para Internet
+ip addr add dev eth1 1.2.64.1/30 
+ip link set dev eth1 up
+
+ip route add default via 1.2.64.2
+
+/etc/init.d/zebra start
+

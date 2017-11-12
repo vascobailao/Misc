@@ -1,0 +1,32 @@
+#Servicos Publicos
+switchSPub routerAcesso switchADM switchSPrv switchLisboa routerFaro routerPorto : routerCore
+serverDNS1 serverDNS2 serverHTTP: switchSPub
+
+#Router Internet
+routerInternet : routerAcesso
+
+#Maquinas Internet
+PC DNSroot DNSpt HTTP: routerInternet
+
+#Servicos Administracao
+pcAdmi pcCont pcRH : switchADM
+
+#Servicos Privados
+pcBackup : switchSPrv
+
+#Logistica Lisboa
+pc1Lx pc2Lx : switchLisboa
+
+#Faro
+switchFaro : routerFaro
+pc1Faro pc2Faro : switchFaro
+
+#Porto
+switchPorto : routerPorto
+pc1Porto pc2Porto: switchPorto
+
+
+pcMoni : pc2Porto
+
+
+

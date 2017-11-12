@@ -1,0 +1,20 @@
+; reverse lookup database 
+$TTL    1
+@               IN      SOA    7.66.2.1.in-addr.arpa.    nobody.nowhere.  (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl 
+                        )
+
+@                            IN      NS      7.66.2.1.in-addr.arpa.
+5.0.168.192.in-addr.arpa.    IN      A       1.2.66.7
+
+NS  pt.
+NS acme.pt.
+
+7	PTR	DNSpt.pt
+7	PTR	DNSpt.pt
+
+

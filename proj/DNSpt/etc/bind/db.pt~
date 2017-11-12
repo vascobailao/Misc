@@ -1,0 +1,19 @@
+$TTL    60000
+@               	IN      SOA     DNSpt.pt.    root.DNSpt.pt. (
+                        	2006031201 ; serial
+                        	28800 ; refresh
+                        	14400 ; retry
+                        	3600000 ; expire
+                        	0 ; negative cache ttl
+                        	)
+@               	IN      NS      DNSpt.pt.
+DNSpt          		IN      A       1.2.66.7
+
+acme 				IN 	NS 	DNSpt.acme.pt.
+xpto      			IN      NS      serverDNS1.xpto.pt.
+xpto      			IN      NS      serverDNS2.xpto.pt.
+serverDNS2.xpto.pt		IN 	A 	1.2.3.3
+serverDNS1.xpto.pt		IN   	A       1.2.3.2
+DNSpt.acme.pt			IN 	A	1.2.66.7
+
+

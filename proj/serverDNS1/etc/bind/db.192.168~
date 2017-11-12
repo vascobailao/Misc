@@ -1,0 +1,15 @@
+; reverse lookup database 
+$TTL    1
+@               IN      SOA     168.192.in-addr.arpa.    root.serverDNS1.xptopt. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl 
+                        )
+
+@                            IN      NS      168.192.in-addr.arpa.
+168.192.in-addr.arpa.        IN      A       1.2.3.2 
+
+
+

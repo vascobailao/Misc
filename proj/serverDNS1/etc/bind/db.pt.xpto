@@ -1,0 +1,33 @@
+$TTL 60000
+@               IN      SOA     serverDNS1.xpto.pt.    root.serverDNS1.xpto.pt. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14400 ; retry
+                        3600000 ; expire
+                        15 ; negative cache ttl
+                        )
+
+@              		IN      NS      serverDNS1.xpto.pt.
+@               	IN      NS      serverDNS2.xpto.pt.
+@			IN	MX	5 	mail.xpto.pt.
+
+
+www.xpto.pt		IN		A		1.2.3.2
+mail.xpto.pt.		IN		A		1.2.3.2
+clientes.xpto.pt.	IN		A		1.2.3.2
+
+serverDNS1.xpto.pt  		IN      	A 	        1.2.3.2
+serverDNS2.xpto.pt		IN		A		1.2.3.3
+
+email 			IN		A		1.2.3.3
+imap			IN		A		1.2.3.3
+pop			IN		A		1.2.3.3
+
+
+
+
+
+
+
+
+
